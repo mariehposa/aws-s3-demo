@@ -1,0 +1,137 @@
+html, body {
+    height: 100%;
+    margin: 0; }
+  
+  body {
+    width: 100%;
+    display: flex;
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    font-size: 14px; }
+    body .first-section {
+      width: 65%;
+      background: #f8f8f8;
+      height: 100%; }
+      body .first-section .coverall {
+        position: relative;
+        right: 50%;
+        left: 25%;
+        top: 10%;
+        width: 55%; }
+        body .first-section .coverall .heading {
+          font-size: 25px;
+          color: #1d1d1d;
+          font-weight: 600; }
+        body .first-section .coverall .info-one {
+          display: flex;
+          margin-bottom: 15px; }
+          body .first-section .coverall .info-one a {
+            margin-top: 14px;
+            margin-left: 7px;
+            font-weight: 600;
+            color: #0000ff;
+            cursor: pointer; }
+        body .first-section .coverall form {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          margin: 10px 0; }
+          body .first-section .coverall form input, body .first-section .coverall form select, body .first-section .coverall form button {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 3px;
+            border: 1px solid #ececec;
+            background: #f8f8f8; }
+          body .first-section .coverall form input[type=text]:focus {
+            outline: 2px solid red; }
+          body .first-section .coverall form input[type=email]:focus {
+            outline: 2px solid red; }
+          body .first-section .coverall form ::placeholder {
+            color: #767676;
+            opacity: .9;
+            font-size: 13px;
+            background: #f8f8f8; }
+          body .first-section .coverall form .select-div {
+            overflow: hidden;
+            overflow: -moz-hidden-unscrollable;
+            background: url(../img/expandarrow.png) no-repeat right white;
+            background-color: #f8f8f8; }
+            body .first-section .coverall form .select-div select {
+              -moz-appearance: none;
+              -webkit-appearance: none;
+              appearance: none;
+              background: transparent;
+              -webkit-appearance: none;
+              color: gray;
+              width: 100%; }
+              body .first-section .coverall form .select-div select .option {
+                color: #333; }
+          body .first-section .coverall form .password-div {
+            width: 100%;
+            display: flex; }
+            body .first-section .coverall form .password-div input {
+              width: 100%;
+              border-right: none; }
+            body .first-section .coverall form .password-div i {
+              border: 1px solid #ececec;
+              cursor: pointer;
+              height: 24px;
+              border-left: none;
+              padding-top: 12px;
+              margin-top: 10px; }
+          body .first-section .coverall form button {
+            opacity: .3;
+            font-weight: 600;
+            cursor: pointer; }
+          body .first-section .coverall form #error-email, body .first-section .coverall form #error-password {
+            visibility: collapse;
+            margin: 0;
+            color: red;
+            font-size: 13px; }
+        body .first-section .coverall .info-two {
+          width: 80%; }
+          body .first-section .coverall .info-two p, body .first-section .coverall .info-two span {
+            line-height: 25px; }
+        body .first-section .coverall a, body .first-section .coverall span {
+          color: #0000ff; }
+    body .second-section {
+      width: 35%;
+      background: #0000ff;
+      color: #fff;
+      height: 100%; }
+      body .second-section div {
+        position: relative;
+        right: 50%;
+        left: 25%;
+        top: 35%;
+        width: 55%; }
+        body .second-section div p:first-child {
+          font-size: 25px;
+          font-weight: 600;
+          margin-bottom: 60px; }
+        body .second-section div p {
+          line-height: 25px; }
+    @media (max-width: 1200px) {
+      body .first-section .coverall {
+        width: 80%;
+        left: 20%; }
+      body .second-section div {
+        width: 80%;
+        left: 13%;
+        top: 20%; } }
+    @media (max-width: 550px) {
+      body {
+        flex-direction: column-reverse; }
+        body .first-section {
+          position: absolute;
+          width: 100%;
+          top: 250px; }
+          body .first-section .coverall {
+            width: 83%;
+            left: 13%; }
+        body .second-section {
+          position: absolute;
+          height: 20rem;
+          width: 100%;
+          top: -1px; } }
+  
