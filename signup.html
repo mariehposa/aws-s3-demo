@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mariam's Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="first-section">
+        <div class="coverall">
+            <div>
+                <p class="heading">Let's set up your account</p>
+                <div class="info-one">
+                    <p>Already have an account?</p>
+                    <a>Sign in</a>
+                </div>
+            </div>
+
+            <form name="signupForm" method="post" onsubmit="return validateForm()">
+                <input type="text" name="name" placeholder="Your name" />
+                <input type="email" name="email" placeholder="Email address" />
+                <p id="error-email">Please enter valid email address</p>
+                <div class="select-div">
+                    <select>
+                        <option disabled selected hidden value="">I would describe my user type as</option>
+                        <option value="admin" class="option">Developer</option>
+                    </select>
+                </div>
+                <div class="password-div">
+                    <input type="password" name="password" placeholder="Password" />
+                    <i class="fas fa-eye" id="togglePassword"></i>
+                </div>
+                <p id="error-password">Minimum of 8 characters</p>
+                <button type="submit">Next</button>
+            </form>
+
+            <div class="info-two">
+                <p>By clicking the "Next" button, you agree to creating a free account, and to <span>Terms of
+                        Service</span>
+                    and <span>Privacy Policy.</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-section">
+        <div>
+            <p>Mariam's Blog</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.</p>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>
